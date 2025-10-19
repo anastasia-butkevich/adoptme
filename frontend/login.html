@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdoptME - Вхід та Реєстрація</title>
+</head>
+<body>
+
+  <header>
+    <div>
+      <a href="index.html">
+        <img src="images/logo.svg" alt="AdoptME logo" width="120" height="40">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="adopt.html">Каталог</a></li>
+        <li><a href="about.html">Про нас</a></li>
+        <li><a href="login.html">Увійти/Реєстрація</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="register">
+      <h2>Створіть обліковий запис</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="reg_fullname">Повне ім’я</label>
+          <input type="text" id="reg_fullname" name="fullname" required>
+        </div>
+        <div>
+          <label for="reg_email">Електронна пошта</label>
+          <input type="email" id="reg_email" name="email" required>
+        </div>
+        <div>
+          <label for="reg_password">Пароль</label>
+          <input type="password" id="reg_password" name="password" required>
+        </div>
+        <div>
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">Я погоджуюсь з умовами використання</label>
+        </div>
+        <button type="submit">Створити обліковий запис</button>
+      </form>
+      <p>Або зареєструйтеся через <a href="#">Google</a></p>
+    </section>
+
+    <hr>
+
+    <section id="login">
+      <h2>Увійдіть до AdoptME</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="login_email">Електронна пошта або ім’я користувача</label>
+          <input type="text" id="login_email" name="email" required>
+        </div>
+        <div>
+          <label for="login_password">Пароль</label>
+          <input type="password" id="login_password" name="password" required>
+        </div>
+        <button type="submit">Увійти</button>
+      </form>
+      <p>Ще не маєте облікового запису? <a href="#register">Зареєструватися</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <h3>Зв'яжіться з нами</h3>
+      <p>Київ, Україна</p>
+      <p>+38(066)-666-66-66</p>
+    </div>
+    <div>
+      <p>&copy; 2025 AdoptME. Усі права захищені.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

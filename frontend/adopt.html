@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdoptME - Знайти друга</title>
+</head>
+<body>
+
+    <header>
+        <div>
+        <a href="index.html">
+            <img src="images/logo.svg" alt="AdoptME logo" width="120" height="40">
+        </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="adopt.html">Каталог</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="login.html">Увійти/Реєстрація</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Прихистити тварину</h1>
+        
+        <aside id="filters">
+            <h3>Фільтри</h3> 
+            <form action="#" method="get">
+                <div>
+                    <label>Вид:</label>
+                    <input type="radio" id="dog" name="species" value="dog">
+                    <label for="dog">Собака</label> 
+                    <input type="radio" id="cat" name="species" value="cat">
+                    <label for="cat">Кіт</label> 
+                </div>
+                <div>
+                    <label for="location">Місцезнаходження:</label>
+                    <input type="text" id="location" name="location" placeholder="Місто або Поштовий індекс"> 
+                </div>
+                <div>
+                    <label for="size">Розмір:</label>
+                    <select id="size" name="size">
+                        <option value="small">Маленький</option> 
+                        <option value="medium">Середній</option> 
+                        <option value="large">Великий</option> 
+                    </select>
+                </div>
+                <div>
+                    <label>Стать:</label>
+                    <select id="sex" name="sex">
+                        <option value="male">Самець</option> 
+                        <option value="female">Самка</option> 
+                    </select>
+                </div>
+                <button type="submit">Застосувати фільтри</button> 
+            </form>
+        </aside>
+
+        <section id="pet-grid">
+            <article>
+            <img src="images/pitbull.png" alt="Песик Пітер шукає новий дім" width="300" height="200">
+            <h3>Пітер</h3>
+            <p>Київ, Київська область</p>
+            <ul>
+                <li>Стать: Самець</li>
+                <li>Вік: 2 роки</li>
+                <li>Порода: Американський пітбультер'єр</li>
+            </ul>
+            <a href="pet-peter.html">Детальніше</a>
+            </article>
+            <article>
+            <img src="images/british.png" alt="Котик Томас чекає на люблячу сім'ю" width="300" height="200">
+            <h3>Томас</h3>
+            <p>Біла Церква, Київська область</p>
+            <ul>
+                <li>Стать: Самець</li>
+                <li>Вік: 1 рік</li>
+                <li>Порода: Британська короткошерста</li>
+            </ul>
+            <a href="pet-tomas.html">Детальніше</a>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <div>
+        <h3>Зв'яжіться з нами</h3>
+        <p>Київ, Україна</p>
+        <p>+38(066)-666-66-66</p>
+        </div>
+        <div>
+        <p>&copy; 2025 AdoptME. Усі права захищені.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
