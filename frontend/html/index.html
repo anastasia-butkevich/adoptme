@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AdoptME - Головна</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Acme&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
 </head>
 <body>
 
@@ -18,47 +26,48 @@
         <li><a href="index.html">Головна</a></li>
         <li><a href="adopt.html">Каталог</a></li>
         <li><a href="about.html">Про нас</a></li>
-        <li><a href="login.html">Увійти/Реєстрація</a></li> </ul>
+        <li><a href="login.html">  Вхід / Реєстрація</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <div>
+    <div class="hero">
       <h1>Дайте нове життя пухнастим друзям</h1>
       <p>Усиновлення та повторне розміщення тварин є важливими аспектами добробуту тварин, пропонуючи надію та новий старт тваринам, які цього потребують.</p>
-      <a href="adopt.html">Прихистити тварину</a>
-      <a href="#">Розмістити оголошення</a>
+      <a href="adopt.html" class="button button-primary">Прихистити тварину</a>
+      <a href="#" class="button button-outline">Розмістити оголошення</a>
     </div>
 
-    <div>
+    <div class="featured-pets">
       <h2>Ознайомтеся з нашими тваринками</h2>
-      <div>
-        <article>
-          <img src="images/pitbull.png" alt="Песик Пітер шукає новий дім" width="300" height="200">
-          <h3>Пітер</h3>
-          <p>Київ, Київська область</p>
+      <div class="pet-grid">
+        <article class="card">
+          <img src="images/pitbull.png" alt="Песик Пітер шукає новий дім" class="card-image">
+          <h3 class="card-title">Пітер</h3>
+          <p class="card-text">Київ, Київська область</p>
           <ul>
             <li>Стать: Самець</li>
             <li>Вік: 2 роки</li>
             <li>Порода: Американський пітбультер'єр</li>
           </ul>
-          <a href="pet-peter.html">Детальніше</a>
+          <a href="pet-peter.html" class="button button-primary">Детальніше</a>
         </article>
-        <article>
-          <img src="images/british.png" alt="Котик Томас чекає на люблячу сім'ю" width="300" height="200">
-          <h3>Томас</h3>
-          <p>Біла Церква, Київська область</p>
+        <article class="card">
+          <img src="images/british.png" alt="Котик Томас чекає на люблячу сім'ю" class="card-image">
+          <h3 class="card-title">Томас</h3>
+          <p class="card-text">Біла Церква, Київська область</p>
           <ul>
             <li>Стать: Самець</li>
             <li>Вік: 1 рік</li>
             <li>Порода: Британська короткошерста</li>
           </ul>
-          <a href="pet-tomas.html">Детальніше</a>
+          <a href="pet-tomas.html" class="button button-primary">Детальніше</a>
         </article>
       </div>
     </div>
 
-    <div>
+    <div class="how-it-works">
       <h2>Взяти або віддати тварину всього за 3 прості кроки</h2>
       <ol>
         <li>Налаштуйте свій профіль.</li>
@@ -71,12 +80,14 @@
 
   <footer>
     <div>
-      <h3>Зв'яжіться з нами</h3>
-      <p>Київ, Україна</p>
-      <p>+38(066)-666-66-66</p>
-    </div>
-    <div>
-      <p>&copy; 2025 AdoptME. Усі права захищені.</p>
+      <div>
+        <h3>Зв'яжіться з нами</h3>
+        <p>Київ, Україна</p>
+        <p>+38(066)-666-66-66</p>
+      </div>
+      <div>
+        <p>&copy; 2025 AdoptME. Усі права захищені.</p>
+      </div>
     </div>
   </footer>
 

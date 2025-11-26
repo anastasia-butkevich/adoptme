@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AdoptME - Вхід та Реєстрація</title>
+  
+   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Acme&display=swap" rel="stylesheet">
+  
+    
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
 </head>
 <body>
 
@@ -18,48 +28,50 @@
         <li><a href="index.html">Головна</a></li>
         <li><a href="adopt.html">Каталог</a></li>
         <li><a href="about.html">Про нас</a></li>
-        <li><a href="login.html">Увійти/Реєстрація</a></li>
+        <li><a href="login.html">  Вхід / Реєстрація</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <div>
+    <div class="auth-form">
       <h2>Створіть обліковий запис</h2>
       <form action="#" method="post">
-        <div>
-          <label for="reg_fullname">Повне ім’я</label>
-          <input type="text" id="reg_fullname" name="fullname" required>
+        <div class="form-group">
+          <label for="reg_fullname" class="form-label">Повне ім'я</label>
+          <input type="text" id="reg_fullname" name="fullname" class="form-input" required>
         </div>
-        <div>
-          <label for="reg_email">Електронна пошта</label>
-          <input type="email" id="reg_email" name="email" required>
+        <div class="form-group">
+          <label for="reg_email" class="form-label">Електронна пошта</label>
+          <input type="email" id="reg_email" name="email" class="form-input" required>
         </div>
-        <div>
-          <label for="reg_password">Пароль</label>
-          <input type="password" id="reg_password" name="password" required>
+        <div class="form-group">
+          <label for="reg_password" class="form-label">Пароль</label>
+          <input type="password" id="reg_password" name="password" class="form-input" required>
         </div>
-        <div>
+        <div class="form-group">
           <input type="checkbox" id="terms" name="terms" required>
           <label for="terms">Я погоджуюсь з умовами використання</label>
         </div>
-        <button type="submit">Створити обліковий запис</button>
+        <button type="submit" class="button button-primary">Створити обліковий запис</button>
       </form>
       <p>Або зареєструйтеся через <a href="#">Google</a></p>
     </div>
 
-    <div>
+    <hr>
+
+    <div class="auth-form">
       <h2>Увійдіть до AdoptME</h2>
       <form action="#" method="post">
-        <div>
-          <label for="login_email">Електронна пошта або ім’я користувача</label>
-          <input type="text" id="login_email" name="email" required>
+        <div class="form-group">
+          <label for="login_email" class="form-label">Електронна пошта або ім'я користувача</label>
+          <input type="text" id="login_email" name="email" class="form-input" required>
         </div>
-        <div>
-          <label for="login_password">Пароль</label>
-          <input type="password" id="login_password" name="password" required>
+        <div class="form-group">
+          <label for="login_password" class="form-label">Пароль</label>
+          <input type="password" id="login_password" name="password" class="form-input" required>
         </div>
-        <button type="submit">Увійти</button>
+        <button type="submit" class="button button-primary">Увійти</button>
       </form>
       <p>Ще не маєте облікового запису? <a href="#register">Зареєструватися</a></p>
     </div>
@@ -67,12 +79,14 @@
 
   <footer>
     <div>
-      <h3>Зв'яжіться з нами</h3>
-      <p>Київ, Україна</p>
-      <p>+38(066)-666-66-66</p>
-    </div>
-    <div>
-      <p>&copy; 2025 AdoptME. Усі права захищені.</p>
+      <div>
+        <h3>Зв'яжіться з нами</h3>
+        <p>Київ, Україна</p>
+        <p>+38(066)-666-66-66</p>
+      </div>
+      <div>
+        <p>&copy; 2025 AdoptME. Усі права захищені.</p>
+      </div>
     </div>
   </footer>
 
