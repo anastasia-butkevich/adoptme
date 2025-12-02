@@ -348,7 +348,8 @@ footer p {
   
   .filters {
     flex: 1;
-    width: 100%;
+    width: 90%;
+    box-sizing: border-box;
   }
   
   .pet-grid {
@@ -369,10 +370,13 @@ footer p {
   
   .adopt-content {
     flex-direction: column;
+    max-width: 100%;
+    overflow-x: hidden;
   }
   
   .filters {
     flex: 1;
-    width: 100%;
+    width: 95%;
+    box-sizing: border-box;
   }
 }
