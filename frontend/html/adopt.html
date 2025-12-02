@@ -5,95 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdoptME - Знайти друга</title>
     
-     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-      
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-    <header>
-        <div>
-        <a href="index.html">
-            <img src="images/logo.svg" alt="AdoptME logo" width="120" height="40">
-        </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="adopt.html">Каталог</a></li>
-                <li><a href="about.html">Про нас</a></li>
-                <li><a href="login.html">  Вхід / Реєстрація</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div>
+      <a href="index.html">
+        <img src="images/logo.svg" alt="AdoptME logo" width="120" height="40">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="adopt.html">Каталог</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="login.html">Вхід / Реєстрація</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
     <main>
         <h1>Прихистити тварину</h1>
-        
-        <aside class="filters">
-            <h3>Фільтри</h3> 
-            <form action="#" method="get">
-                <div class="form-group">
-                    <label class="form-label">Вид:</label>
-                    <input type="radio" id="dog" name="species" value="dog">
-                    <label for="dog">Собака</label> 
-                    <input type="radio" id="cat" name="species" value="cat">
-                    <label for="cat">Кіт</label> 
+        <div class="adopt-content">
+            <aside class="filters">
+                <h3>Фільтри</h3> 
+                <form action="#" method="get">
+                    <div class="form-group">
+                        <label class="form-label">Вид:</label>
+                        <input type="radio" id="dog" name="species" value="dog">
+                        <label for="dog">Собака</label> 
+                        <input type="radio" id="cat" name="species" value="cat">
+                        <label for="cat">Кіт</label> 
+                    </div>
+                    <div class="form-group">
+                        <label for="location" class="form-label">Місцезнаходження:</label>
+                        <input type="text" id="location" name="location" placeholder="Місто або Поштовий індекс" class="form-input"> 
+                    </div>
+                    <div class="form-group">
+                        <label for="size" class="form-label">Розмір:</label>
+                        <select id="size" name="size" class="form-input">
+                            <option value="small">Маленький</option> 
+                            <option value="medium">Середній</option> 
+                            <option value="large">Великий</option> 
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sex" class="form-label">Стать:</label>
+                        <select id="sex" name="sex" class="form-input">
+                            <option value="male">Самець</option> 
+                            <option value="female">Самка</option> 
+                        </select>
+                    </div>
+                    <button type="submit" class="button button-primary">Застосувати фільтри</button> 
+                </form>
+            </aside>
+            
+            <div class="pet-listing">
+                <div class="pet-grid">
+                <article class="card">
+                <img src="images/pitbull.png" alt="Песик Пітер шукає новий дім" class="card-image">
+                <h3 class="card-title">Пітер</h3>
+                <p class="card-text">Київ, Київська область</p>
+                <ul>
+                    <li>Стать: Самець</li>
+                    <li>Вік: 2 роки</li>
+                    <li>Порода: Американський пітбультер'єр</li>
+                </ul>
+                <a href="pet-peter.html" class="button button-primary">Детальніше</a>
+                </article>
+                <article class="card">
+                <img src="images/british.png" alt="Котик Томас чекає на люблячу сім'ю" class="card-image">
+                <h3 class="card-title">Томас</h3>
+                <p class="card-text">Біла Церква, Київська область</p>
+                <ul>
+                    <li>Стать: Самець</li>
+                    <li>Вік: 1 рік</li>
+                    <li>Порода: Британська короткошерста</li>
+                </ul>
+                <a href="pet-tomas.html" class="button button-primary">Детальніше</a>
+                </article>
                 </div>
-                <div class="form-group">
-                    <label for="location" class="form-label">Місцезнаходження:</label>
-                    <input type="text" id="location" name="location" placeholder="Місто або Поштовий індекс" class="form-input"> 
-                </div>
-                <div class="form-group">
-                    <label for="size" class="form-label">Розмір:</label>
-                    <select id="size" name="size" class="form-input">
-                        <option value="small">Маленький</option> 
-                        <option value="medium">Середній</option> 
-                        <option value="large">Великий</option> 
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="sex" class="form-label">Стать:</label>
-                    <select id="sex" name="sex" class="form-input">
-                        <option value="male">Самець</option> 
-                        <option value="female">Самка</option> 
-                    </select>
-                </div>
-                <button type="submit" class="button button-primary">Застосувати фільтри</button> 
-            </form>
-        </aside>
-        
-        <div class="pet-listing">
-            <h2>Тварини, що шукають новий дім</h2>
-            <div class="pet-grid">
-            <article class="card">
-            <img src="images/pitbull.png" alt="Песик Пітер шукає новий дім" class="card-image">
-            <h3 class="card-title">Пітер</h3>
-            <p class="card-text">Київ, Київська область</p>
-            <ul>
-                <li>Стать: Самець</li>
-                <li>Вік: 2 роки</li>
-                <li>Порода: Американський пітбультер'єр</li>
-            </ul>
-            <a href="pet-peter.html" class="button button-primary">Детальніше</a>
-            </article>
-            <article class="card">
-            <img src="images/british.png" alt="Котик Томас чекає на люблячу сім'ю" class="card-image">
-            <h3 class="card-title">Томас</h3>
-            <p class="card-text">Біла Церква, Київська область</p>
-            <ul>
-                <li>Стать: Самець</li>
-                <li>Вік: 1 рік</li>
-                <li>Порода: Британська короткошерста</li>
-            </ul>
-            <a href="pet-tomas.html" class="button button-primary">Детальніше</a>
-            </article>
             </div>
         </div>
     </main>
