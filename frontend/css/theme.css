@@ -1,0 +1,167 @@
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3 {
+  color: #b8a9ff;
+}
+
+body.dark-theme p {
+  color: #d0d0d0;
+}
+
+body.dark-theme header {
+  background-color: #2a2a2a;
+  border-bottom-color: #3a3a3a;
+}
+
+body.dark-theme nav a {
+  color: #e0e0e0;
+}
+
+body.dark-theme nav a:hover {
+  color: #b8a9ff;
+}
+
+body.dark-theme .card {
+  background-color: #2a2a2a;
+  border-color: #3a3a3a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-theme .card-title {
+  color: #b8a9ff;
+}
+
+body.dark-theme .card-text,
+body.dark-theme .card ul {
+  color: #b0b0b0;
+}
+
+body.dark-theme .hero {
+  background: linear-gradient(135deg, #2a2440 0%, #1a1a1a 100%);
+}
+
+body.dark-theme .hero p {
+  color: #b0b0b0;
+}
+
+body.dark-theme .how-it-works {
+  background-color: #2a2440;
+}
+
+body.dark-theme .auth-form,
+body.dark-theme .filters {
+  background-color: #2a2a2a;
+  border-color: #3a3a3a;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .form-input {
+  background-color: #333;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+body.dark-theme .form-input:focus {
+  border-color: #b8a9ff;
+}
+
+body.dark-theme .form-input::placeholder {
+  color: #666;
+}
+
+body.dark-theme .form-label {
+  color: #e0e0e0;
+}
+
+body.dark-theme .vaccination-info {
+  background-color: #2a2440;
+}
+
+body.dark-theme .pet-info li {
+  color: #b0b0b0;
+}
+
+body.dark-theme footer {
+  background-color: #1a1a2e;
+}
+
+body.dark-theme .about-section p {
+  color: #b0b0b0;
+}
+
+.nav-highlight {
+  background-color: #EAE8F7;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+body.dark-theme .nav-highlight {
+  background-color: #3a3a5a;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.error-message {
+  animation: fadeIn 0.3s ease;
+}
+
+.success-message {
+  animation: fadeIn 0.5s ease;
+}
+
+#theme-toggle {
+  cursor: pointer;
+  font-size: 18px;
+  min-width: auto;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+#dynamic-element {
+  animation: fadeIn 1s ease;
+}
+
+#hidden-content {
+  animation: fadeIn 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  #theme-toggle {
+    padding: 6px 12px;
+    font-size: 16px;
+  }
+
+  #welcome-message {
+    display: none;
+  }
+}
+
+.card {
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+#font-notification {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
